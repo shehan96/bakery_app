@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackimg"
+    tools:context="com.adelmotechnology.bakery_app.RegisterUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fornt-logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:id="@+id/registertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fornt-logo"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/usernametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registertext"
+            android:layout_margin="10dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/enternewuseremail"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/usernameStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/passwordtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/usernametext"
+            android:layout_margin="10dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/enternewuserpassword"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/singinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordtext"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_btn_design"
+            android:text="@string/singup"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/ortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/or"
+            android:textColor="@color/white"
+            android:layout_below="@+id/singinbtn"
+            android:textSize="25dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/goBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ortext"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_btn_design"
+            android:text="@string/goback"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

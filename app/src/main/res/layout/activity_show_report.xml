@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adelmotechnology.bakery_app.showReportActivity"
+    android:background="@drawable/mainbackimg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/addSalesdetailstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/salesreport"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addSalesdetailstext"
+            android:layout_margin="5dp"
+            android:text="@string/shopname"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/shopspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/addSalesdetailstext"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/shopnametext"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/visitdatetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopnametext"
+            android:layout_margin="5dp"
+            android:text="@string/visit_date"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopnametext"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/visitdatetext"
+            android:hint="@string/entervisitdate"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/itemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datetext"
+            android:layout_margin="5dp"
+            android:text="@string/month"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/monthspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datetext"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/itemtext"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/genaratebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/monthspinner"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design"
+            android:text="@string/generate"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/monthspinner"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="@string/pricetotal"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/clearbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/monthspinner"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <ListView
+            android:id="@+id/itemlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/genaratebtn"
+            android:layout_margin="5dp"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

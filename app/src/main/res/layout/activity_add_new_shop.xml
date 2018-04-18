@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adelmotechnology.bakery_app.addNewShopActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbackimg">
+
+        <TextView
+            android:id="@+id/addSalesdetailstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/addnewshop"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/shopnameedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addSalesdetailstext"
+            android:layout_margin="15dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/shop_name"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/addnewitembtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopnameedittext"
+            android:text="@string/addnewitem"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+        <ListView
+            android:id="@+id/shoplist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewitembtn"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

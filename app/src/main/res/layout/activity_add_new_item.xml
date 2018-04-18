@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adelmotechnology.bakery_app.addNewItemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbackimg">
+
+        <TextView
+            android:id="@+id/addSalesdetailstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/addnewitem"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/itemnameedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addSalesdetailstext"
+            android:layout_margin="15dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/itemname"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/priceedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemnameedittext"
+            android:layout_margin="15dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/price"
+            android:textColorHint="@color/black"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/addnewitembtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceedittext"
+            android:text="@string/addnewitem"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/currentitemstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/currentitems"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/addnewitembtn"/>
+
+        <ListView
+            android:id="@+id/currentitemlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentitemstext"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:divider="@color/white"
+            android:background="@color/white"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

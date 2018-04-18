@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adelmotechnology.bakery_app.controlPanel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbackimg">
+
+        <TextView
+        android:id="@+id/addSalesdetailstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/controlpanel"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+        <Button
+         android:id="@+id/addnewuserbtn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/addSalesdetailstext"
+         android:text="@string/addnewuser"
+         android:background="@drawable/white_btn_design"
+         android:layout_margin="15dp"
+         android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/addnewshopbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewuserbtn"
+            android:text="@string/addnewshop"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/addnewitembtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewshopbtn"
+            android:text="@string/addnewitem"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/showreportbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addnewitembtn"
+            android:text="@string/showreports"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/salesbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showreportbtn"
+            android:text="@string/sales"
+            android:background="@drawable/white_btn_design"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

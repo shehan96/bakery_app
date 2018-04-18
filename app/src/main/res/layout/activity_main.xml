@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackimg"
+    tools:context="com.adelmotechnology.bakery_app.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fornt-logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fornt-logo"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/usernametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logintext"
+            android:layout_margin="10dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/username"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/passwordtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/usernametext"
+            android:layout_margin="10dp"
+            android:background="@drawable/inputtext"
+            android:hint="@string/password"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordtext"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_btn_design"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/ortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text"
+            android:textColor="@color/white"
+            android:layout_below="@+id/loginbtn"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
